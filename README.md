@@ -4,7 +4,7 @@
 It is composed of three Spring Boot–based modules:
 
 1. **Graph API Gateway** – Exposes REST endpoints to external clients and translates them into WebSocket commands.
-2. **Graph Processor** – Receives structured messages over WebSocket, processes graph commands, and persists data in PostgreSQL.
+2. **Graph Processor** – Receives structured messages over WebSocket, processes graph commands, and persists data in Neo4j graph database.
 3. **Graph Common** – A shared library containing models, enums, protocol classes, and validation logic.
 
 ---
