@@ -62,7 +62,7 @@ GraphMessageBridge/
 - **Java 17** + **Spring Boot**
 - **WebSocket** for async internal messaging
 - **Spring Web + Validation + JPA**
-- **PostgreSQL** as the persistent store
+- **Neo4j** as the persistent store
 - **Springdoc OpenAPI** for Swagger
 - **Gson** for JSON serialization
 
@@ -91,7 +91,7 @@ cd ../GraphApiGateway
 mvn spring-boot:run
 ```
 
-> Ensure PostgreSQL is running locally or via Docker on port `5432`.
+> Ensure Neo4j is running locally or via Docker on port `7687`.
 
 ---
 
@@ -119,7 +119,7 @@ http://localhost:8081/swagger-ui/index.html
 
 - REST requests should be sent to `http://localhost:8080/api/v1/...`
 - The API Gateway handles WebSocket forwarding automatically
-- PostgreSQL should be running locally or via container at port `5432`
+- Neo4j should be running locally or via container at port `7687`
 
 ---
 
