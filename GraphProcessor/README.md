@@ -1,6 +1,6 @@
 # ⚙️ Graph Processor
 
-The **Graph Processor** is a Spring Boot microservice responsible for handling graph-related commands received over WebSocket. It validates incoming messages, processes them, stores graph structures in PostgreSQL, and responds with acknowledgments or requested data such as node descendants.
+The **Graph Processor** is a Spring Boot microservice responsible for handling graph-related commands received over WebSocket. It validates and processes incoming messages, persists graph structures to a Neo4j graph database, and supports efficient graph traversal and relationship queries. It responds with acknowledgments or data payloads such as node descendants, enabling real-time, graph-driven workflows.
 
 This service works alongside the `graph-api-gateway`, which receives REST requests and forwards them as WebSocket messages.
 
