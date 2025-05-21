@@ -10,7 +10,7 @@ This service works alongside the `graph-api-gateway`, which receives REST reques
 
 - Parse and validate structured WebSocket messages (via `WebSocketEnvelope`)
 - Route each message to the correct handler using `MessageProcessorFactory`
-- Store graph and node entities in PostgreSQL via Spring Data repositories
+- Store graph and node entities in Neo4j graph database via Spring Data repositories
 - Return structured `ACK` or data responses through WebSocket
 
 ---
@@ -42,7 +42,7 @@ Supported `type` values:
 
 ## 🗃️ Data Layer
 
-- **Database:** PostgreSQL
+- **Database:** Neo4j
 - **Entities:** `Graph`, `NodeEntity`
 - **Repositories:**
   - `GraphRepository`
@@ -96,10 +96,9 @@ docker run -p 8080:8080 graph-processor
 ```properties
 spring.application.name=graph-processor
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/graphdb
+spring.datasource.url=bolt://localhost:7687
 spring.datasource.username=your_user
 spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
 ```
 
 WebSocket endpoint: `/ws/graph`
