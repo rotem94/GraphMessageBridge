@@ -32,7 +32,7 @@ It is composed of three Spring Boot–based modules:
 - Listens for WebSocket messages from the gateway
 - Parses and validates incoming `WebSocketEnvelope` messages
 - Executes graph-related commands (`CREATE`, `UPDATE`, `GET`, etc.)
-- Persists nodes and relationships in PostgreSQL
+- Persists nodes and relationships in Neo4j graph database
 - Sends acknowledgments and data responses back to the gateway
 
 ### 3. 📦 Graph Common (`/GraphCommon`)
