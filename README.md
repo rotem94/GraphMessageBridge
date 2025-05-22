@@ -109,7 +109,7 @@ http://localhost:8081/swagger-ui/index.html
 
 | Service           | Type | Path                       | Description              |
 | ----------------- | ---- | -------------------------- | ------------------------ |
-| Graph API Gateway | REST | `/api/v1/graphs`, `/nodes` | CRUD operations on graph |
+| Graph API Gateway | REST | `/api/v1/graphs`, `/api/v1/nodes` | CRUD operations on graph |
 | Graph Processor   | WS   | `/ws/graph`                | Internal WebSocket API   |
 | Swagger UI        | Web  | `/swagger-ui/index.html`   | API docs                 |
 
